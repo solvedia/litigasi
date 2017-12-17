@@ -1,0 +1,61 @@
+.btn 
+	display: inline-block
+	font-weight: normal
+	text-align: center
+	vertical-align: middle
+	cursor: pointer
+	border: 1px solid transparent
+	white-space: nowrap
+	padding: 6px 12px
+	font-size: 14px
+	line-height: 1.4
+	border-radius: 4px
+	user-select: none
+	transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+
+	// Share hover and focus styles
+	&:hover,
+	&:focus
+		text-decoration: none
+	
+	&:focus
+		outline: 0
+		box-shadow: none
+	
+	// Disabled comes first so active can properly restyle
+	&.disabled,
+	&:disabled 
+		opacity: .65
+		box-shadow: none
+
+	&:not([disabled]):not(.disabled):active,
+	&:not([disabled]):not(.disabled).active 
+		background-image: none
+		box-shadow: none	
+	
+
+.btn-link
+	font-weight: 400
+	color: $accent-nd
+	background: transparent
+	
+	&:hover 
+		color: lighten($accent-nd, 10%)
+		text-decoration: none
+		border-color: transparent
+  	
+	&:focus
+		border-color: transparent
+		box-shadow: none
+  	
+	&:disabled,
+	&.disabled
+		color: $gray-600
+		
+
+.btn-red
+	color: $red
+	background: transparent
+	
+	&:hover
+		color: lighten($red, 10%)
