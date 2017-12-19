@@ -6,7 +6,7 @@ $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #dc3545 !default;
+$red:     #c1392b !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
@@ -29,8 +29,8 @@ $black:    #000 !default;
 
 
 // Theme
-$accent: #f56857;
-$accent-nd: #20c997;
+$accent: #34495e;
+$accent-nd: #f39c11;
 $accent-light: adjust-hue(saturate(lighten($accent, 11%), 12.6%), 14%);
 $selectionColor: lighten($accent, 30%);
 $textColor: #666;
